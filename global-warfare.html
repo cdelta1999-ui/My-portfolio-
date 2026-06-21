@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Global Warfare Analysis & Strategic Forecasting Command · Daliya Chakraborty</title>
+<meta name="description" content="Case study: An advanced, live predictive matrix and interactive geographical dashboard for analyzing global geopolitical risks and conflict timelines.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+@view-transition{navigation:auto;}
+:root{--ink:#08060F;--ink-1:#0F0A1E;--ink-2:#171130;
+--violet:#7C5CFF;--violet-soft:#AC97FF;--magenta:#CC52DE;--cyan:#2ED2DE;--cyan-soft:#7FE9F0;
+--text:#ECE9F8;--muted:#B9B2D6;--muted-ink:#8E86B4;--line-ink:rgba(255,255,255,.12);
+--max:1000px;--display:"Sora",system-ui,sans-serif;--body:"Manrope",system-ui,sans-serif;--mono:"IBM Plex Mono",ui-monospace,monospace;
+--tile:rgba(18,12,36,.62);--tile-2:rgba(28,20,54,.55);}
+*{box-sizing:border-box;}html{scroll-behavior:smooth;background:var(--ink);}
+body{margin:0;background:transparent;color:var(--text);font-family:var(--body);line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+a{color:inherit;text-decoration:none;}img{max-width:100%;display:block;border-radius:12px;}
+h1,h2,h3,h4{font-family:var(--display);font-weight:700;line-height:1.12;letter-spacing:-.02em;margin:0;}
+.site-bg{position:fixed;inset:-4%;z-index:-2;background:radial-gradient(circle at top right, var(--ink-1), var(--ink));}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 30px;}
+.top-nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:24px 30px;display:flex;justify-content:space-between;align-items:center;background:linear-gradient(to bottom,rgba(8,6,15,0.9) 0%,rgba(8,6,15,0) 100%);}
+.top-nav a.back{font-family:var(--display);font-weight:600;font-size:15px;color:var(--text);opacity:0.8;transition:opacity 0.2s;}
+.top-nav a.back:hover{opacity:1;}
+.hero{padding:140px 0 80px;position:relative;}
+.hero-tag{font-family:var(--mono);font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(--cyan);margin-bottom:20px;display:block;}
+.hero h1{font-size:clamp(40px,5vw,64px);background:linear-gradient(90deg,var(--cyan),var(--violet),var(--magenta));-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:24px;}
+.hero-lead{font-size:20px;color:var(--muted);max-width:800px;margin-bottom:48px;}
+.hero-img-wrap{position:relative;border-radius:16px;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,0.5), 0 0 0 1px var(--line-ink);}
+.hero-img-wrap::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 50%,rgba(8,6,15,0.8) 100%);pointer-events:none;}
+.content-grid{display:grid;grid-template-columns:1fr 300px;gap:60px;padding:80px 0;}
+.main-col section{margin-bottom:60px;}
+.main-col h2{font-size:32px;margin-bottom:24px;color:var(--text);}
+.main-col h3{font-size:22px;margin:32px 0 16px;color:var(--violet-soft);}
+.main-col p{margin-bottom:20px;}
+.main-col ul{padding-left:20px;margin-bottom:24px;}
+.main-col li{margin-bottom:12px;}
+.main-col li b{color:var(--cyan-soft);}
+.side-col{position:sticky;top:100px;height:max-content;}
+.side-card{background:var(--tile);border:1px solid var(--line-ink);border-radius:12px;padding:32px;margin-bottom:24px;backdrop-filter:blur(10px);}
+.side-card h4{font-size:14px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);margin-bottom:16px;}
+.stat{margin-bottom:20px;}
+.stat-val{font-family:var(--display);font-size:32px;font-weight:700;color:var(--cyan);margin-bottom:4px;line-height:1;}
+.stat-label{font-size:14px;color:var(--muted);}
+.tag-list{display:flex;flex-wrap:wrap;gap:8px;}
+.tag{background:var(--tile-2);border:1px solid var(--line-ink);padding:6px 12px;border-radius:20px;font-size:13px;color:var(--muted-ink);}
+.code-block{background:var(--ink-2);padding:16px;border-radius:8px;font-family:var(--mono);font-size:14px;color:var(--cyan-soft);overflow-x:auto;margin:20px 0;border:1px solid var(--line-ink);}
+@media(max-width:900px){.content-grid{grid-template-columns:1fr;}}
+</style>
+<script>
+if (window !== window.top) {
+  document.documentElement.classList.add('in-iframe');
+}
+</script>
+<style>
+html.in-iframe .nav, html.in-iframe footer { display: none !important; }
+</style>
+</head>
+<body>
+<div class="site-bg"></div>
+
+<nav class="top-nav">
+  <div class="wrap" style="width:100%;margin:0;">
+    <a href="index.html" class="back">&#8592; Back to Portfolio</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="hero-tag">Live Predictive Matrix &bull; Machine Learning</span>
+    <h1>Global Warfare Analysis &amp; Strategic Forecasting Command</h1>
+    <p class="hero-lead">An advanced, live predictive matrix and interactive geographical dashboard for analyzing global geopolitical risks, conflict timelines, and strategic vulnerabilities.</p>
+    <div class="hero-img-wrap">
+      <img src="global-warfare-dashboard.png" alt="Global Warfare Analysis Dashboard">
+    </div>
+  </div>
+</header>
+
+<div class="wrap content-grid">
+  <main class="main-col">
+    <section>
+      <h2>What Was Built</h2>
+      <p>The solution spans both a dynamic machine learning pipeline and rich interactive dashboards to assess the <b>Wound Vulnerability Index (WVI)</b> and predict future asymmetrical and conventional conflicts.</p>
+      
+      <h3>1. Machine Learning Pipelines</h3>
+      <ul>
+        <li><b>Data Engineering:</b> Aggregated master geopolitical data (from sources like ACLED, UCDP, CFR Cyber Tracker) into rolling lags and predictive features (e.g., <code>event_count_3yr</code>, <code>fatality_sum_5yr</code>, <code>velocity_3yr</code>).</li>
+        <li><b>Offline Models:</b> Random Forest Classifiers and Regressors trained to predict attack types and escalate infiltration volumes via <code>train_ml_model.py</code>.</li>
+        <li><b>Dynamic Models:</b> Real-time XGBoost pipelines that train on the fly to generate regional forecasts, risk probabilities, and predictable conflict volumes based on the latest geopolitical state via <code>server.py</code> &amp; <code>app.py</code>.</li>
+      </ul>
+
+      <h3>2. Backend API (FastAPI)</h3>
+      <p>A robust FastAPI server powers the frontend with several strategic endpoints:</p>
+      <ul>
+        <li><b>/api/forecast/{country}:</b> Returns ML-driven predictive matrices including danger status (e.g., "CRITICAL: Accelerating Infiltration") and predicted war types.</li>
+        <li><b>/api/map_data:</b> Generates WVI (Wound Vulnerability Index) scores for global heatmapping.</li>
+        <li><b>/api/flow_maps &amp; /api/digital_lifelines:</b> Tracks major global shipping routes, choke points, naval patrols, and critical subsea data nodes.</li>
+        <li><b>/api/asymmetric_vulnerabilities:</b> Highlights new vectors of attack, such as aerospace corridors and supply chain bottlenecks.</li>
+      </ul>
+
+      <h3>3. Interactive Frontends</h3>
+      <ul>
+        <li><b>React Dashboard:</b> A premium, glassmorphic UI built with Mapbox GL and Recharts. It features toggles for infrastructure overlays, an interactive world map for country selection, an intelligence dossier sidebar, and a detailed predictive breakdown.</li>
+        <li><b>Streamlit App:</b> An alternative, rapid-deployment dashboard visualizing the global map and forecasting data with Plotly integration.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Key Findings &amp; Strategic Analysis</h2>
+      <p>The predictive analysis highlighted several key findings and "next-gen" wounding zones that extend beyond conventional military conflict:</p>
+      <ul>
+        <li><b>The "Cabbage Strategy" (Incremental Friction):</b> Nations are increasingly wrapping targets in layers of civilian proxy forces and legal ambiguity, slowly suffocating adversaries through economic coercion rather than direct military engagement.</li>
+        <li><b>Asymmetric Supply Disruption:</b> Secondary tech-packaging hubs (like Penang) and transport corridors (like those in the DRC) are highly vulnerable. Sabotaging these nodes halts global supply chains with minimal geopolitical fallout.</li>
+        <li><b>The Global Agricultural Choke Point:</b> Areas holding vast reserves of critical agricultural minerals (e.g., Moroccan phosphates) represent immense demographic weapons capable of triggering global famine and inflation.</li>
+        <li><b>Digital Financial Gateways:</b> Disruption of major subsea cable routes (like the SEA-ME-WE route) represents a massive vulnerability capable of paralyzing digital economies without a single kinetic strike.</li>
+        <li><b>Environmental Hostage-Taking:</b> The control of headwaters and mega-dams (such as those in Tibet) allows powers to devastate downstream nations' agriculture via orchestrated floods or droughts.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>How to Run</h2>
+      <p>To run the application locally, you'll need to start both the backend server and the frontend client.</p>
+      
+      <h3>Start the FastAPI Backend:</h3>
+      <div class="code-block">python server.py</div>
+      
+      <h3>Start the React Frontend:</h3>
+      <p>Navigate to the frontend directory and run:</p>
+      <div class="code-block">npm install<br>npm run dev</div>
+    </section>
+  </main>
+
+  <aside class="side-col">
+    <div class="side-card">
+      <h4>Dataset Metrics</h4>
+      <div class="stat">
+        <div class="stat-val">178</div>
+        <div class="stat-label">Sovereign States &amp; Territories</div>
+      </div>
+      <div class="stat">
+        <div class="stat-val">4,983</div>
+        <div class="stat-label">Multi-Year Conflict Events</div>
+      </div>
+      <div class="stat">
+        <div class="stat-val">42.31M</div>
+        <div class="stat-label">Historical Fatalities Analyzed</div>
+      </div>
+    </div>
+    
+    <div class="side-card">
+      <h4>Tech Stack</h4>
+      <div class="tag-list">
+        <span class="tag">Python</span>
+        <span class="tag">FastAPI</span>
+        <span class="tag">XGBoost</span>
+        <span class="tag">Random Forest</span>
+        <span class="tag">React</span>
+        <span class="tag">Mapbox GL</span>
+        <span class="tag">Recharts</span>
+        <span class="tag">Streamlit</span>
+      </div>
+    </div>
+  </aside>
+</div>
+<script>
+const nav=document.querySelector('.top-nav');
+window.addEventListener('scroll',()=>{
+  let y=window.scrollY;
+  nav.style.background=y>50?'var(--ink)':'linear-gradient(to bottom,rgba(8,6,15,0.9) 0%,transparent 100%)';
+  nav.style.boxShadow=y>50?'0 10px 30px rgba(0,0,0,0.5)':'none';
+});
+</script>
+</body>
+</html>
