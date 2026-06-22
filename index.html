@@ -4,12 +4,12 @@
 <title>Daliya Chakraborty — Product Data Analyst & AI Specialist</title>
 <meta name="description" content="Daliya Chakraborty — Product Data Analyst & AI Specialist. I turn messy behavioral data into models, dashboards, and decisions leaders can trust.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#08060F;--ink-1:#0F0A1E;--ink-2:#171130;--paper:#F1EFFA;--paper-2:#E7E3F6;--card:#FFFFFF;
---violet:#7C5CFF;--violet-soft:#AC97FF;--magenta:#CC52DE;--cyan:#2ED2DE;--cyan-soft:#7FE9F0;
---text:#16122A;--muted:#5E5878;--muted-ink:#A49CCB;--line:rgba(22,18,42,.12);--line-ink:rgba(255,255,255,.12);
---max:1180px;--display:"Sora",system-ui,sans-serif;--body:"Manrope",system-ui,sans-serif;--mono:"IBM Plex Mono",ui-monospace,monospace;}
+:root{--ink:#05020A;--ink-1:#0B0715;--ink-2:#130A24;--paper:#F1EFFA;--paper-2:#E7E3F6;--card:#FFFFFF;
+--violet:#8A2BE2;--violet-soft:#B180FF;--magenta:#FF007F;--cyan:#00E5FF;--cyan-soft:#7FE9F0;
+--text:#E0E0E0;--muted:#8C83B4;--muted-ink:#746A9E;--line:rgba(255,255,255,.05);--line-ink:rgba(255,255,255,.1);
+--max:1180px;--display:"Outfit",system-ui,sans-serif;--body:"Inter",system-ui,sans-serif;--mono:"IBM Plex Mono",ui-monospace,monospace;}
 *{box-sizing:border-box;}html{scroll-behavior:smooth;background:var(--ink);}
 body{margin:0;background:transparent;color:var(--text);font-family:var(--body);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
 a{color:inherit;text-decoration:none;}img{max-width:100%;display:block;}
@@ -70,9 +70,9 @@ h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.08;letter-spac
 .hero-cta{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px;}
 .btn{font-family:var(--mono);font-size:.8rem;letter-spacing:.03em;padding:14px 24px;border-radius:10px;font-weight:500;display:inline-flex;align-items:center;gap:10px;border:1px solid transparent;cursor:pointer;transition:transform .25s cubic-bezier(.2,.7,.2,1),box-shadow .25s,border-color .2s,filter .2s;will-change:transform;}
 .btn-primary{background:linear-gradient(135deg,var(--violet),var(--magenta));color:#fff;}
-.btn-primary:hover{box-shadow:0 14px 36px -10px rgba(124,92,255,.6);filter:brightness(1.08);}
-.btn-ghost{background:rgba(255,255,255,.04);color:#fff;border-color:var(--line-ink);backdrop-filter:blur(8px);}
-.btn-ghost:hover{border-color:#fff;}
+.btn-primary:hover{box-shadow:0 14px 36px -10px rgba(138,43,226,.6),0 0 20px rgba(255,0,127,.4);filter:brightness(1.15);}
+.btn-ghost{background:rgba(255,255,255,.04);color:#fff;border-color:rgba(255,255,255,0.15);backdrop-filter:blur(12px);transition:all .3s;}
+.btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.1);box-shadow:0 8px 24px rgba(255,255,255,.1);}
 .btn .arr{transition:transform .2s;}.btn:hover .arr{transform:translate(3px,-3px);}
 .portrait-wrap{justify-self:end;position:relative;width:min(430px,44vw);will-change:transform;}
 .pmask{position:relative;-webkit-mask-image:radial-gradient(ellipse 98% 94% at 50% 33%,#000 60%,rgba(0,0,0,0) 93%);mask-image:radial-gradient(ellipse 98% 94% at 50% 33%,#000 60%,rgba(0,0,0,0) 93%);}
@@ -93,8 +93,8 @@ h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.08;letter-spac
 
 .skill-head{margin-bottom:46px;}.skill-head h2{font-size:clamp(2rem,4vw,2.9rem);}.skill-head p{color:#E0DCF0;max-width:42ch;margin:14px 0 0;text-shadow:0 1px 14px rgba(8,6,15,.7);}
 .skill-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
-.skill-card{background:rgba(14,9,28,.62);border:1px solid var(--line-ink);backdrop-filter:blur(12px);border-radius:16px;padding:26px 24px;transition:transform .3s,border-color .3s,background .3s;will-change:transform;}
-.skill-card:hover{background:rgba(124,92,255,.2);border-color:rgba(172,151,255,.55);transform:translateY(-5px);}
+.skill-card{background:rgba(20,15,30,0.4);border:1px solid rgba(255,255,255,0.08);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-radius:16px;padding:26px 24px;transition:transform .3s,border-color .3s,background .3s,box-shadow .3s;will-change:transform;box-shadow:0 8px 32px rgba(0,0,0,0.4);}
+.skill-card:hover{background:rgba(138,43,226,.15);border-color:rgba(138,43,226,.5);transform:translateY(-5px);box-shadow:0 15px 40px -10px rgba(138,43,226,.3),0 0 15px rgba(0,229,255,.15);}
 .skill-card .n{font-family:var(--mono);font-size:.7rem;color:var(--cyan-soft);letter-spacing:.1em;}
 .skill-card h3{font-size:1.12rem;margin:10px 0 14px;}
 .tags{display:flex;flex-wrap:wrap;gap:8px;}
@@ -122,8 +122,8 @@ h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.08;letter-spac
 .viz-cap{position:absolute;left:26px;bottom:24px;font-family:var(--mono);font-size:.7rem;letter-spacing:.08em;color:var(--muted-ink);text-transform:uppercase;z-index:2;}
 .draw{stroke-dasharray:600;stroke-dashoffset:600;}.in .draw{animation:draw 1.8s .3s cubic-bezier(.4,0,.2,1) forwards;}@keyframes draw{to{stroke-dashoffset:0;}}
 .proj-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:22px;}
-.card{background:linear-gradient(165deg,var(--ink-1),var(--ink));border:1px solid var(--line-ink);border-radius:18px;padding:30px 28px;display:flex;flex-direction:column;transition:transform .3s cubic-bezier(.2,.7,.2,1),box-shadow .3s;transform-style:preserve-3d;will-change:transform;min-height:284px;}
-.card:hover{box-shadow:0 30px 64px -30px rgba(124,92,255,.32);}
+.card{background:rgba(20,15,30,0.5);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,0.08);border-radius:18px;padding:30px 28px;display:flex;flex-direction:column;transition:transform .3s cubic-bezier(.2,.7,.2,1),box-shadow .3s,border-color .3s;transform-style:preserve-3d;will-change:transform;min-height:284px;box-shadow:0 8px 32px rgba(0,0,0,0.4);}
+.card:hover{box-shadow:0 20px 50px -10px rgba(138,43,226,.4),0 0 20px rgba(0,229,255,.2);border-color:rgba(138,43,226,.5);transform:translateY(-4px);}
 .card .swatch{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;margin-bottom:18px;font-family:var(--display);font-weight:800;color:#fff;font-size:1.1rem;box-shadow:0 10px 26px -10px rgba(0,0,0,.4);}
 .card .cstatus{font-family:var(--mono);font-size:.67rem;letter-spacing:.09em;text-transform:uppercase;color:var(--violet-soft);margin-bottom:9px;display:flex;align-items:center;gap:8px;}
 .card .cstatus.soon{color:var(--muted);}
@@ -183,7 +183,10 @@ h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.08;letter-spac
 .section{padding:80px 0;}.nav-links{display:none;}.nav-toggle{display:block;}
 .nav-links.open{display:flex;position:absolute;top:62px;left:0;right:0;flex-direction:column;background:var(--ink);padding:22px 30px;gap:18px;border-bottom:1px solid var(--line-ink);}
 .skill-grid{grid-template-columns:1fr;}.proj-grid{grid-template-columns:1fr;}.hero-stats{grid-template-columns:repeat(auto-fit,minmax(320px,1fr));}
-.stat{border-bottom:1px solid var(--line-ink);padding-bottom:22px;}.stat:nth-child(2){border-right:0;}.metrics{grid-template-columns:repeat(auto-fit,minmax(320px,1fr));}.feature .left{padding:36px 26px;}}
+.stat{border-bottom:1px solid var(--line-ink);padding-bottom:22px;}.stat:nth-child(2){border-right:0;}.metrics{grid-template-columns:repeat(auto-fit,minmax(320px,1fr));}.feature .left{padding:36px 26px;}
+.project-modal .modal-content{width:100%;max-width:100%;}
+.project-modal .modal-close{left:auto;right:16px;top:16px;width:44px;height:44px;font-size:28px;}
+}
 @media(prefers-reduced-motion:reduce){.reveal,.h-rise{opacity:1!important;transform:none!important;}.glow,.portrait-ring,.hero-kicker .dot{animation:none!important;}.img-layer{animation-duration:26s!important;}.draw{stroke-dashoffset:0;}}
 .card:hover {
   box-shadow: 0 20px 40px -10px rgba(124,92,255,0.25), 0 0 20px rgba(46,210,222,0.15);
@@ -224,9 +227,18 @@ h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.08;letter-spac
 @keyframes spin { to { transform: rotate(360deg); } }
 .modal-loader .text { color: var(--violet-soft); font-family: var(--display); font-weight: 700; font-size: 1.1rem; letter-spacing: 2px; text-transform: uppercase; }
 .modal-loader.hidden { opacity: 0; }
-</style></head>
+
+.glowing-orbs { position: fixed; inset: 0; z-index: -1; pointer-events: none; overflow: hidden; }
+.orb { position: absolute; border-radius: 50%; filter: blur(100px); opacity: 0.4; animation: floatOrb 20s infinite ease-in-out alternate; }
+.orb-1 { width: 500px; height: 500px; background: rgba(138,43,226,0.3); top: -100px; left: -100px; animation-delay: 0s; }
+.orb-2 { width: 600px; height: 600px; background: rgba(0,229,255,0.2); bottom: -150px; right: -100px; animation-delay: -5s; }
+.orb-3 { width: 400px; height: 400px; background: rgba(255,0,127,0.2); top: 40%; left: 60%; animation-delay: -10s; }
+@keyframes floatOrb { 0% { transform: translate(0, 0) scale(1); } 50% { transform: translate(50px, 80px) scale(1.1); } 100% { transform: translate(-30px, 40px) scale(0.9); } }
+</style>
+</head>
 <body>
 <div class="site-bg"><div class="layer"></div></div><div class="site-tint"></div>
+<div class="glowing-orbs"><div class="orb orb-1"></div><div class="orb orb-2"></div><div class="orb orb-3"></div></div>
 <div class="grain"></div><div class="progress" id="progress"></div>
 <div class="page-fade" id="pageFade"><div class="pf-mark">DC</div></div>
 
@@ -234,7 +246,7 @@ h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.08;letter-spac
 <a href="#top" class="brand"><span class="mark">DC</span><span>Daliya Chakraborty</span></a>
 <button class="nav-toggle" aria-label="Toggle menu" id="navToggle">&#8801;</button>
 <div class="nav-links" id="navLinks"><a href="#about">About</a><a href="#skills">Skills</a><a href="#work">Work</a><a href="#contact">Contact</a>
-<a class="nav-cta" href="Daliya-Chakraborty-Resume.pdf" target="_blank" rel="noopener">R&eacute;sum&eacute; &#8599;</a></div>
+<a class="nav-cta" href="Daliya_Chakraborty_Data_Analyst_CV.pdf" download="Daliya_Chakraborty_Data_Analyst_CV.pdf" target="_blank" rel="noopener">R&eacute;sum&eacute; &#8599;</a></div>
 </div></nav>
 
 <header class="hero" id="top">
@@ -248,7 +260,7 @@ h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.08;letter-spac
       <p class="hero-sub h-rise d4">I build the models, dashboards, and analyses that tell teams what's happening, why, and what to do next.</p>
       <div class="hero-cta h-rise d5">
         <a class="btn btn-primary magnetic" href="#work">See selected work <span class="arr">&#8599;</span></a>
-        <a class="btn btn-ghost magnetic" href="Daliya-Chakraborty-Resume.pdf" target="_blank" rel="noopener">Download r&eacute;sum&eacute;</a>
+        <a class="btn btn-ghost magnetic" href="Daliya_Chakraborty_Data_Analyst_CV.pdf" download="Daliya_Chakraborty_Data_Analyst_CV.pdf" target="_blank" rel="noopener">Download r&eacute;sum&eacute;</a>
       </div>
       <div class="hero-stats h-rise d6" id="statRow">
         <div class="stat"><div class="v"><span class="num" data-target="0.97" data-dec="2">0.97</span></div><div class="l">Model AUC</div></div>
